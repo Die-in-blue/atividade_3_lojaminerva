@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/jarros.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .menu {
+    font-size: 15pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    z-index: 999;
+}
+
+header .menu li {
+    display: inline-block;
+}
+
+header .menu a {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+header .menu .ativo,
+header .menu a:hover {
+    color: #444;
+    background-color: white;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.principal h2 {
+    color: white;
+    font-size: 45px;
+}
+
+.principal .links a {
+    color: white;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: 200ms;
+}
+
+.principal .links a:hover {
+    color: #444;
+    background-color: white;
+}
+
+.principal h3,
+p {
+    color: white;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(245, 222, 179), rgba(245, 222, 179));
+}
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1bc296;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #f0f5fb;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+}
+
+ ::-webkit-input-placeholder {
+    color: #79e4a6;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1bc296;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-btn:hover>.search-btn {
+    background: #f0f5fb;
+}
+
+.row {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+    transition: all ease-in;
+}
+
+.img img {
+    width: 350px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.img img:hover {
+    opacity: .7;
+}
+
+.texto {
+    font-size: 13pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.texto h4 {
+    background: url('../image/jarros.webp') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 10px 0px;
+}
+
+.botao button {
+    color: white;
+    font-size: 15pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 7vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/jarros.webp');
+    cursor: pointer;
+    transition: all ease-in;
+}
+
+.botao button:hover {
+    opacity: .9;
+}
+
+.rodape {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #ffff;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/jarros.webp');
+}
+
+.navFooter {
+    list-style: none;
+}
+
+.navFooter ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.navFooter li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.endereco p {
+    margin-top: 20px;
+}
+
+.formulario fieldset {
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 400px;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.formulario input {
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.formulario button {
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    margin-top: 20px;
+    background: linear-gradient(rgba(245, 222, 179), rgba(245, 222, 179));
+    font-weight: 600;
+    font-size: 15pt;
+    cursor: pointer;
+    color: #ffff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 5px;
+}
+
+footer span {
+    font-size: 20pt;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.successField {
+    border: 3px solid green !important;
+}
+
+.errorField {
+    border: 3px solid red !important;
+}

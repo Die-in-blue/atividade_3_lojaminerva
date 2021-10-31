@@ -1,0 +1,201 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/styleCarrossel.css">
+<title>Produtos Naturais</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="menu">
+            <a href="" class="minerva">MINERVA</a>
+
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Pesquisar">
+                <a href="#" class="search-btn">
+                    <img src="image/lupa.png" alt="Lupa" height="20" width="20">
+                </a>
+
+            </div>
+            <ul>
+                <li><a href="" class="ativo">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+        <!--menu-->
+
+
+        <section class="principal">
+            <h2>Os melhores produtos do mercado</h2>
+            <div class="links">
+                <a href="">Minerva Produtos Naturais</a>
+            </div>
+        </section>
+
+
+    </header>
+
+    <div class="slides">
+        <div class="slideshow">
+            <div class="mySlides fade">
+                <img src="image/black-friday.jpg" alt="imagem1">
+            </div>
+            <div class="mySlides fade">
+                <img src="image/kitskin.jpg" alt="imagem1">
+            </div>
+
+            <a class="prev" onclick="currentSlide(1)">&#10094;</a>
+            <a class="next" onclick="currentSlide(2)">&#10095;</a>
+        </div>
+        <br>
+        <div class="slideNav">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+    <main>
+        <div class="container" id="produtos">
+            <div class="row">
+                <div class="card">
+                    <div class="img">
+                        <img src="image/kitskin.jpg" alt="skincare" title="Kit Skin Care">
+                    </div>
+                    <div class="texto">
+                        <h4>LANÇAMENTO Kit Skin Care </h4>
+                        <span>De: R$359,90 Por: R$269,90 </span>
+                    </div>
+                    <div class="botao">
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="img">
+                        <img src="image/vela.webp" alt="vela" title="Vela Verbena">
+                    </div>
+                    <div class="texto">
+                        <h4>Vela Verbena 145g </h4>
+                        <span>Por: R$59,90 </span>
+                    </div>
+                    <div class="botao">
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="image/manjericao.webp" alt="manjericao" title="Manjericão">
+                    </div>
+                    <div class="texto">
+                        <h4>Manjericão Unidade </h4>
+                        <span>Por: R$14,99 </span>
+                    </div>
+                    <div class="botao">
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+                        <div class="img">
+                            <img src="image/gengibre.webp" alt="gengibre" title="Gengibre">
+                        </div>
+                        <div class="texto">
+                            <h4>Gengibre Natural Raiz 1kg </h4>
+                            <span>Por: R$29,90 </span>
+                        </div>
+                        <div class="botao">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="image/queijodecabra.jpg" alt="queijo" title="Queijo de cabra">
+                        </div>
+                        <div class="texto">
+                            <h4>Queijo de Cabra </h4>
+                            <span>Por: R$199,90</span>
+                        </div>
+                        <div class="botao">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="image/cafe.webp" alt="cafe" title="Café">
+                        </div>
+                        <div class="texto">
+                            <h4>Grãos de Café 500g </h4>
+                            <span>Por: R$24,90</span>
+                        </div>
+                        <div class="botao">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="navFooter">
+                <span>Navegação</span>
+                <ul>
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Sobre nós</li>
+                </ul>
+            </div>
+            <div class="endereco">
+                <span>Minerva</span>
+                <p>
+                    CNPJ: 00.000.000/0000-00 <br> Rua ##### #####, 000, São Paulo <br> São Paulo/SP <br> CEP 00000-000 <br>
+                </p>
+            </div>
+            <div class="formulario">
+
+                <form action="" name="myForm" onsubmit="return(validate());">
+                    <fieldset>
+                        <legend>Receba Novidades</legend>
+                        <div>
+
+                            <label for="name">Nome</label>&nbsp;
+                            <input type="text" nome="Name" id="Name" placeholder="Digite o seu nome"><br>
+                            <small id="obrigatorioNome">Campo obrigatório*</small>
+                        </div><br>
+                        <div>
+
+                            <label for="email">E-mail</label><br>
+                            <input type="email" name="Email" id="Email" placeholder="Digite o seu e-mail"><br>
+                            <small id="obrigatorioEmail">Campo obrigatório*</small>
+                        </div><br>
+                        <div>
+
+                            <label for="Tel">Telefone</label>
+                            <input type="tel" name="Tel" id="Tel" placeholder="Digite o seu telefone" maxlength="11"><br>
+                            <small id="obrigatorioTel">Campo obrigatório*</small>
+                        </div><br>
+
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script/carrossel.js"></script>
+    <script type="text/javascript" src="script/validateForm.js"></script>
+    <script type="text/javascript">
+        configFieds();
+    </script>
+</body>
+
+
+</html>

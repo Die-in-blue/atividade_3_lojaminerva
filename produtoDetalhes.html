@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produtostyle.css">
+
+    <title>Queijo Cabra</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="menu">
+            <a href="" class="minerva">MINERVA</a>
+
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Pesquisar">
+                <a href="#" class="search-btn">
+                    <img src="image/lupa.png" alt="Lupa" height="20" width="20">
+                </a>
+
+            </div>
+            <ul>
+                <li><a href="" class="ativo">Home</a></li>
+                <li><a href="index.html">Produtos</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="containerProduto">
+            <div class="card">
+                <div class="img">
+                    <img src="image/queijodecabra.jpg" alt="queijo" title="Queijo de cabra">
+                </div>
+                <div class="texto">
+                    <h4>Queijo de Cabra </h4>
+                    <span>Por: R$199,90</span>
+                </div>
+                <div class="botao">
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="infoProduto">
+                <p>Descrição: O queijo fresco de cabra é produzido a partir de leite de cabra estreme, submetido a tratamento térmico e coagulado com coalho animal. Tem uma forma cilíndrica e um peso inferior a 150 g. O queijo seco é obtido a partir do queijo
+                    fresco não comercializado, procedendo-se à sua salga, por deposição de uma camada de sal à superfície do queijo, sendo depois sujeito a um processo de secagem à temperatura ambiente.</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="navFooter">
+                <span>Navegação</span>
+                <ul>
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Sobre nós</li>
+                </ul>
+            </div>
+            <div class="endereco">
+                <span>Minerva</span>
+                <p>
+                    CNPJ: 00.000.000/0000-00 <br> Rua ##### #####, 000, São Paulo <br> São Paulo/SP <br> CEP 00000-000 <br>
+                </p>
+            </div>
+            <div class="formulario">
+                <form action="" name="myForm" onsubmit="return(validate());">
+                    <fieldset>
+                        <legend>Receba Novidades</legend>
+                        <div>
+
+                            <label for="name">Nome</label>&nbsp;
+                            <input type="text" nome="Name" id="Name" placeholder="Digite o seu nome"><br>
+                            <small id="obrigatorioNome">Campo obrigatório*</small>
+                        </div><br>
+                        <div>
+
+                            <label for="email">E-mail</label><br>
+                            <input type="email" name="Email" id="Email" placeholder="Digite o seu e-mail"><br>
+                            <small id="obrigatorioEmail">Campo obrigatório*</small>
+                        </div><br>
+                        <div>
+
+                            <label for="Tel">Telefone</label>
+                            <input type="tel" name="Tel" id="Tel" placeholder="Digite o seu telefone" maxlength="11"><br>
+                            <small id="obrigatorioTel">Campo obrigatório*</small>
+                        </div><br>
+
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script/validateForm.js"></script>
+    <script type="text/javascript">
+        configFieds();
+    </script>
+</body>
+
+
+</html>

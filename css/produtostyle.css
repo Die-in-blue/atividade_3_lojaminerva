@@ -1,0 +1,27 @@
+header {
+    height: 15vh !important;
+    display: flex;
+    align-items: center;
+}
+
+.containerProduto {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+}
+
+.imageProduto img {
+    width: 500px;
+}
+
+.infoProduto p {
+    padding: 50px;
+    font-size: 30px !important;
+    font-style: 800;
+    letter-spacing: 2;
+    line-height: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/jarros.webp');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
